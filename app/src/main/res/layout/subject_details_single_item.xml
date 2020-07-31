@@ -1,0 +1,46 @@
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/White"
+            android:id="@+id/tvSubjectTitle"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:id="@+id/line"
+            android:layout_below="@+id/tvSubjectTitle"
+            android:background="@color/lightGray"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:text="Syllabus"
+            android:id="@+id/tvSyllabus"
+            android:textSize="14sp"
+            android:layout_below="@+id/line"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
