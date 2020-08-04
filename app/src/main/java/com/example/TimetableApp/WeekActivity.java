@@ -1,9 +1,8 @@
-package com.example.timetabledemo;
+package com.example.TimetableApp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,20 +16,22 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+//import android.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
-import com.example.timetabledemo.Utils.LetterImageView;
+import com.example.TimetableApp.Utils.LetterImageView;
 
-public class FacultyActivity extends AppCompatActivity {
+public class WeekActivity extends AppCompatActivity {
 
-    private ListView listView;
     private Toolbar toolbar;
+    private ListView listView;
     public static SharedPreferences sharedPreferences;
-    public static String SEL_FACULTY;
+    public static String SEL_DAY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_faculty);
+        setContentView(R.layout.activity_week);
 
         setupUIViews();
         initToolbar();
@@ -38,19 +39,20 @@ public class FacultyActivity extends AppCompatActivity {
     }
 
     private void setupUIViews(){
-        toolbar = findViewById(R.id.ToolBarFaculty);
-        listView = findViewById(R.id.lvFaculty);
-        sharedPreferences = getSharedPreferences("MY_FACULTY",MODE_PRIVATE);
+        toolbar = (Toolbar) findViewById(R.id.ToolBarWeek);
+        listView = (ListView) findViewById(R.id.lvWeek);
+        sharedPreferences = getSharedPreferences("MY_DAY",MODE_PRIVATE);
     }
+
     private void initToolbar(){
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Faculty");
+        getSupportActionBar().setTitle("Week");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void setupListView(){
-        String[] faculty = getResources().getStringArray(R.array.faculty);
-        FacultyAdapter adapter = new FacultyAdapter(this,R.layout.faculty_single_item,faculty);
+        String[] week = getResources().getStringArray(R.array.Week);
+        WeekAdapter adapter = new WeekAdapter(this,R.layout.activity_week_single_item,week);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -58,28 +60,33 @@ public class FacultyActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0: {
-                        startActivity(new Intent(FacultyActivity.this,FacultyDetails.class));
-                        sharedPreferences.edit().putInt(SEL_FACULTY, 0).apply();
+                        startActivity(new Intent(WeekActivity.this, DayDetail.class));
+                        sharedPreferences.edit().putString(SEL_DAY, "Monday").apply();
                         break;
                     }
                     case 1: {
-                        startActivity(new Intent(FacultyActivity.this,FacultyDetails.class));
-                        sharedPreferences.edit().putInt(SEL_FACULTY, 1).apply();
+                        startActivity(new Intent(WeekActivity.this,DayDetail.class));
+                        sharedPreferences.edit().putString(SEL_DAY, "Tuesday").apply();
                         break;
                     }
                     case 2: {
-                        startActivity(new Intent(FacultyActivity.this,FacultyDetails.class));
-                        sharedPreferences.edit().putInt(SEL_FACULTY, 2).apply();
+                        startActivity(new Intent(WeekActivity.this,DayDetail.class));
+                        sharedPreferences.edit().putString(SEL_DAY, "Wednesday").apply();
                         break;
                     }
                     case 3: {
-                        startActivity(new Intent(FacultyActivity.this,FacultyDetails.class));
-                        sharedPreferences.edit().putInt(SEL_FACULTY, 3).apply();
+                        startActivity(new Intent(WeekActivity.this,DayDetail.class));
+                        sharedPreferences.edit().putString(SEL_DAY, "Thursday").apply();
                         break;
                     }
                     case 4: {
-                        startActivity(new Intent(FacultyActivity.this,FacultyDetails.class));
-                        sharedPreferences.edit().putInt(SEL_FACULTY, 4).apply();
+                        startActivity(new Intent(WeekActivity.this,DayDetail.class));
+                        sharedPreferences.edit().putString(SEL_DAY, "Friday").apply();
+                        break;
+                    }
+                    case 5: {
+                        startActivity(new Intent(WeekActivity.this,DayDetail.class));
+                        sharedPreferences.edit().putString(SEL_DAY, "Saturday").apply();
                         break;
                     }
                     default : break;
@@ -88,42 +95,42 @@ public class FacultyActivity extends AppCompatActivity {
         });
     }
 
-    public class FacultyAdapter extends ArrayAdapter {
+    public class WeekAdapter extends ArrayAdapter{
 
         private int resource;
         private LayoutInflater layoutInflater;
-        private String[] faculty;
+        private String[] week;
 
-        public FacultyAdapter(Context context, int resource, String[] faculty) {
-            super(context, resource, faculty);
+        public WeekAdapter(Context context, int resource, String[] objects) {
+            super(context, resource, objects);
             this.resource = resource;
-            this.faculty = faculty;
+            this.week = objects;
             layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
         @Override
-        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        public View getView(int position,@Nullable View convertView,@NonNull ViewGroup parent) {
             ViewHolder holder;
             if(convertView == null){
                 holder = new ViewHolder();
                 convertView = layoutInflater.inflate(resource,null);
-                holder.ivLogo = (LetterImageView)convertView.findViewById(R.id.ivLetterFaculty);
-                holder.tvFaculty = (TextView)convertView.findViewById(R.id.tvFacultyName);
+                holder.ivLogo = (LetterImageView)convertView.findViewById(R.id.ivLetter);
+                holder.tvWeek = (TextView)convertView.findViewById(R.id.tvMain);
                 convertView.setTag(holder);
             }else{
                 holder = (ViewHolder) convertView.getTag();
             }
 
             holder.ivLogo.setOval(true);
-            holder.ivLogo.setLetter(faculty[position].charAt(0));
-            holder.tvFaculty.setText(faculty[position]);
+            holder.ivLogo.setLetter(week[position].charAt(0));
+            holder.tvWeek.setText(week[position]);
 
             return convertView;
         }
 
         class ViewHolder{
             private LetterImageView ivLogo;
-            private TextView tvFaculty;
+            private TextView tvWeek;
 
         }
     }
@@ -137,5 +144,4 @@ public class FacultyActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

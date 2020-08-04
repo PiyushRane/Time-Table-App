@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Time Table demo</string>
+    <string name="app_name">Time Table App</string>
 
     <string-array name="Main">// titleArray in MainActivity is getting position from here in getView
         function
@@ -9,8 +9,8 @@
         // index 1
         <item> Faculty </item>
         // index 2
-        <item> Resources </item>
-        // index 3
+<!--        <item> Resources </item>-->
+<!--        // index 3-->
 <!--        <item> Resources </item>-->
 <!--        <item> Resources </item>-->
 <!--        <item> Resources </item>-->
@@ -18,10 +18,10 @@
     </string-array>
 
     <string-array name="Description">
-        <item> Description 1 </item>
-        <item> Description 2 </item>
-        <item> Description 3 </item>
-        <item> Description 4 </item>
+        <item>Time Management according to days</item>
+        <item>All subjects in this semester</item>
+        <item>Contact details of faculty</item>
+<!--        <item> Description 4 </item>-->
 <!--        <item> Description 4 </item>-->
 <!--        <item> Description 4 </item>-->
 <!--        <item> Description 4 </item>-->
@@ -38,52 +38,98 @@
     </string-array>
 
     <string-array name="Monday">
-        <item>Mixed Signal Design</item>
-        <item>Analog Wave Propogation</item>
-        <item>Break</item>
-        <item>CT2 Lab - A1\nMSD Lab - A2</item>
-        <item>Break</item>
-        <item>Cluster Elective</item>
-        <item>Cluster Elective Lab/Tut</item>
+        <item>Lec-CS202A</item>
+        <item>Breakfast</item>
+        <item>Lec-CS253A</item>
+        <item>Lec-CS220A</item>
+        <item>Lec-ESO201A</item>
+        <item>Lab-CS253A</item>
+        <item>Lec-ENG124A</item>
+    </string-array>
+    <string-array name="time1">
+        <item>8:00AM - 9:00AM</item>
+        <item>9:00AM - 10:00AM</item>
+        <item>10:00AM - 11:00AM</item>
+        <item>11:00AM - 12:00PM</item>
+        <item>12:00PM - 1:00PM</item>
+        <item>2:00PM - 4:50PM</item>
+        <item>5:00PM - 6:00PM</item>
     </string-array>
 
     <string-array name="Tuesday">
-        <item>Computer Communication Networks</item>
-        <item>Communication Theory - 2</item>
-        <item>Break</item>
-        <item>Computer Communication Networks</item>
-        <item>Mixed Signal Design</item>
-        <item>Break</item>
-        <item> CT2 Lab - A4\nMSD Lab - A1</item>
+        <item>Lec-TA202</item>
+        <item>Breakfast</item>
+        <item>Lec-CS253A</item>
+        <item>Free Time</item>
+        <item>Free Time</item>
+        <item>Lab-TA202A</item>
+        <item>Tut-ENG1242A</item>
+    </string-array>
+    <string-array name="time2">
+        <item>8:00AM - 9:00AM</item>
+        <item>9:00AM - 10:00AM</item>
+        <item>10:00AM - 11:00AM</item>
+        <item>11:00AM - 12:00PM</item>
+        <item>12:00PM - 1:00PM</item>
+        <item>2:00PM - 4:50PM</item>
+        <item>5:00PM - 6:00PM</item>
     </string-array>
 
     <string-array name="Wednesday">
-        <item>Antenna and Wave Propagation</item>
-        <item>Computer Communication Networks</item>
-        <item>Break</item>
-        <item>Cluster Elective</item>
-        <item>Department Elective</item>
-        <item>Break</item>
-        <item> AWP Tutorial</item>
+        <item>Lec-CS202A</item>
+        <item>Free Time</item>
+        <item>Free Time</item>
+        <item>Free Time</item>
+        <item>Lec-ESO201A</item>
+        <item>Lab-CS220A</item>
+        <item>Lec-ENG124A</item>
+    </string-array>
+    <string-array name="time3">
+        <item>8:00AM - 9:00AM</item>
+        <item>9:00AM - 10:00AM</item>
+        <item>10:00AM - 11:00AM</item>
+        <item>11:00AM - 12:00PM</item>
+        <item>12:00PM - 1:00PM</item>
+        <item>2:00PM - 4:50PM</item>
+        <item>5:00PM - 6:00PM</item>
     </string-array>
 
     <string-array name="Thursday">
-        <item>Antenna and Wave Propagation </item>
-        <item>Communication Theory - 2</item>
-        <item>Break</item>
-        <item>Cluster Elective</item>
-        <item>Department Elective</item>
-        <item>Break</item>
-        <item> CT2 Lab - A2\nMSD Lab - A3</item>
+        <item>Free Time</item>
+        <item>Breakfast</item>
+        <item>Free Time</item>
+        <item>Lec-CS220A</item>
+        <item>Lec-ESO201A</item>
+        <item>Lab-TA202A</item>
+        <item>Lec-ENG124A</item>
+    </string-array>
+    <string-array name="time4">
+        <item>8:00AM - 9:00AM</item>
+        <item>9:00AM - 10:00AM</item>
+        <item>10:00AM - 11:00AM</item>
+        <item>11:00AM - 12:00PM</item>
+        <item>12:00PM - 1:00PM</item>
+        <item>2:00PM - 4:50PM</item>
+        <item>5:00PM - 6:00PM</item>
     </string-array>
 
     <string-array name="Friday">
-        <item> CT2 Lab - A3\nMSD Lab - A4</item>
-        <item>Break</item>
-        <item>Mixed Signal Design</item>
-        <item>Communication Theory - 2</item>
-        <item>Break</item>
-        <item>Department Elective Tut</item>
+        <item>Lec-CS202A</item>
+        <item>Breakfast</item>
+        <item>Lec-CS253A</item>
+        <item>Lec-CS220A</item>
+        <item>Free Time</item>
+        <item>Lab-CS253A</item>
+        <item>Tut-ENG124A</item>
+    </string-array>
+    <string-array name="time5">
+        <item>8:00AM - 9:00AM</item>
+        <item>9:00AM - 10:00AM</item>
+        <item>10:00AM - 11:00AM</item>
+        <item>11:00AM - 12:00PM</item>
+        <item>12:00PM - 1:00PM</item>
+        <item>2:00PM - 4:50PM</item>
+        <item>5:00PM - 6:00PM</item>
     </string-array>
 
     <string-array name="Saturday">
@@ -91,56 +137,6 @@
         <item>Break</item>
         <item>Self Study</item>
     </string-array>
-
-    <string-array name="time1">
-        <item>8:55AM - 9:50AM</item>
-        <item>9:50AM - 10:45AM</item>
-        <item>10:45AM - 11:15AM</item>
-        <item>11:15AM - 1:05PM</item>
-        <item>1:05PM - 2:00PM</item>
-        <item>2:00PM - 2:55PM</item>
-        <item>2:55PM - 4:45PM</item>
-    </string-array>
-
-    <string-array name="time2">
-        <item>8:55AM - 9:50AM</item>
-        <item>9:50AM - 10:45AM</item>
-        <item>10:45AM - 11:15AM</item>
-        <item>11:15AM - 12:10PM</item>
-        <item>12:10PM - 1:05PM</item>
-        <item>1:05PM - 2:00PM</item>
-        <item>2:00PM - 3:50PM</item>
-    </string-array>
-
-    <string-array name="time3">
-        <item>8:55AM - 9:50AM</item>
-        <item>9:50AM - 10:45AM</item>
-        <item>10:45AM - 11:15AM</item>
-        <item>11:15AM - 12:10PM</item>
-        <item>12:10PM - 1:05PM</item>
-        <item>1:05PM - 2:00PM</item>
-        <item>2:00PM - 3:50PM</item>
-    </string-array>
-
-    <string-array name="time4">
-        <item>8:55AM - 9:50AM</item>
-        <item>9:50AM - 10:45AM</item>
-        <item>10:45AM - 11:15AM</item>
-        <item>11:15AM - 12:10PM</item>
-        <item>12:10PM - 1:05PM</item>
-        <item>1:05PM - 2:00PM</item>
-        <item>2:00PM - 3:50PM</item>
-    </string-array>
-
-    <string-array name="time5">
-        <item>8:55AM - 10:45AM</item>
-        <item>10:45AM - 11:15AM</item>
-        <item>11:15AM - 12:10PM</item>
-        <item>12:10PM - 1:05PM</item>
-        <item>1:05PM - 2:00PM</item>
-        <item>2:00PM - 3:50PM</item>
-    </string-array>
-
     <string-array name="time6">
         <item>8:55AM - 10:45AM</item>
         <item>10:45AM - 11:15AM</item>
@@ -156,46 +152,69 @@
         <item>ENG124</item>
     </string-array>
     <string-array name="ESO201">
-        <item>Description 1</item>
-        <item>Description 2</item>
-        <item>Description 3</item>
-        <item>Description 4</item>
-        <item>Some Book</item>
+        <item>Definitions and concepts: SI Units; System; Property; Energy; Thermodynamic Equilibrium; Work, State Postulate; Zeroth Law of Thermodynamics;</item>
+        <item>Temperature Scale, Thermodynamic Properties of Fluids: Mathematical, Tabular and Graphical representation of data; Ideal gas Van der Waals Equation of state; Compressibility chart; Thermodynamic Diagrams including Mollier diagram;</item>
+        <item>Steam Tables, First law of Thermodynamics and its applications to Non flow processes, Applications of First Law of Thermodynamics of Flow Processes; Steady state Steady flow and Transient flow processes,</item>
+        <item>Thermodynamic Properties of Fluids: Pure substance. Phase, Simple compressible substance, Ideal gas Equation of state, van der Waals Equation of State; Law of corresponding states, Compressibility chart, Pressure volume; Temperature volume and Phase diagrams; Mollier diagram and Steam tables. </item>
+        <item>Thermodynamics_An_Engineering_Approach</item>
     </string-array>
     <string-array name="CS201">
-        <item>Description 1</item>
-        <item>Description 2</item>
-        <item>Description 3</item>
-        <item>Description 4</item>
-        <item>Some Book</item>
+        <item>
+            Sets, relations, functions, countable and uncountable sets.
+            Proofs; Proofs by deduction, contra-positive and contradiction (diagonalization).
+            Proofs by induction
+        </item>
+        <item>
+            Selection/combination, arrangements/permutation, rule of sum, rule of product.
+            Binomial coefficients, identities, multinomial coefficients.
+            Selection with repetition/distributions of objects into cells, distinguishable/indistinguishable objects.
+            Combinatorial problems with restrictions
+        </item>
+        <item>
+            Definitions, degree, paths, cycles, Hamiltonian path, Eulerian cycles.
+            cycles and acyclic graphs.
+            Trees, spanning tree, networks.
+        </item>
+        <item>
+            Divisibility, primes, division theorem, Euclids gcd/extended Euclids algorithm, Unique factorization domain.
+            Modular arithmetic, sums and products, Chinese remaindering, Mobius inversion.
+        </item>
+        <item>
+            1) Kenneth Rosen, Discrete mathematics and its applications.
+            2) Norman Biggs, Discrete mathematics.
+            3) Chung Liu, Introduction to combinatorial mathematics.
+            4) David Burton, Elementary number theory.
+        </item>
     </string-array>
     <string-array name="CS202">
-        <item>Description 1</item>
-        <item>Description 2</item>
-        <item>Description 3</item>
-        <item>Description 4</item>
-        <item>Some Book</item>
+        <item>Propositional logic syntax and semantics.</item>
+        <item>Tautologies, axiom system and deduction.</item>
+        <item>Proof of soundness and completeness.</item>
+        <item>First order logic syntax and semantics.</item>
+        <item>HD Ebbinghaus, J Flum, W Thomas, Mathematical Logic, 2nd Ed., Springer Verlag, 1994.</item>
     </string-array>
     <string-array name="ESO207">
-        <item>Description 1</item>
-        <item>Description 2</item>
-        <item>Description 3</item>
-        <item>Description 4</item>
-        <item>Some Book</item>
+        <item>Random-access-machine model, concept of problem size, and asymptotic behaviour of time/space complexity.</item>
+        <item>Estimation of time/space complexity by smooth functions and order notations.</item>
+        <item>Elementary data-structures: arrays, lists, queues, stacks and their applications.</item>
+        <item>Balanced binary-search-tree: Red-Black trees.
+            Hashing for insert, search, delete.
+            Heap data structure.</item>
+        <item>TH Cormen, CF Leiserson, RL Rivest, C Stein, Introduction to Algorithms, 3rd Ed., MIT Press, 2009.</item>
     </string-array>
     <string-array name="TA201">
-        <item>Description 1</item>
-        <item>Description 2</item>
-        <item>Description 3</item>
-        <item>Description 4</item>
-        <item>Some Book</item>
+        <item>GMA and MMAWelding Practice and Demonstration + TIG Welding Demonstration and Polymer Joining</item>
+        <item>Brazing and Gas Welding Practice and Demonstration</item>
+        <item>Sheet Metal Practice and Demonstration + Rolling Demonstration </item>
+        <item>Hot Forging Practice and Demonstration + Cold Forging Demonstration </item>
+        <item>Materials Science and Engineering, G.S. Upadhyaya and A. Upadhyaya </item>
     </string-array>
     <string-array name="ENG124">
-        <item>Description 1</item>
-        <item>Description 2</item>
-        <item>Description 3</item>
-        <item>Description 4</item>
-        <item>Some Book</item>
+        <item>Problems of definition; Multilingual communities;</item>
+        <item>Language variation; Language and identity;</item>
+        <item>Standardization; Language, culture and cognition; </item>
+        <item>Language and social control; Methodological issues.</item>
+        <item>Introduction to Communication and Communication Behaviors</item>
     </string-array>
 
     <string-array name="titles">
@@ -207,37 +226,44 @@
     </string-array>
 
     <string-array name="faculty">
-        <item>Faculty 1</item>
-        <item>Faculty 2</item>
-        <item>Faculty 3</item>
-        <item>Faculty 4</item>
-        <item>Faculty 5</item>
+        <item>Sameer Khandekar</item>
+        <item>Amey Karkare</item>
+        <item>Anil Seth</item>
+        <item>Debadatta Mishra</item>
+        <item>Mainak Chaudhuri</item>
     </string-array>
 
     <string-array name="faculty1">
-        <item>1234957685</item>
-        <item>faculty1@gmail.com</item>
-        <item>faculty1 IITK</item>
+        <item>0512-259-7038</item>
+        <item>samkhan@iitk.ac.in</item>
+        <item>SL-109 ,
+        Department of Mechanical Engineering
+        IIT Kanpur,
+        Kanpur 208016
+        </item>
     </string-array>
     <string-array name="faculty2">
-        <item>1234952545</item>
-        <item>faculty2@gmail.com</item>
-        <item>faculty2 IITK</item>
+        <item>	+91 512 259 7520 (Office)</item>
+        <item>karkare@cse.iitk.ac.in</item>
+        <item>Room No. 401, Rajeev Motwani Building,
+            Dept of Computer Science and Engg,
+            Indian Institute of Technology Kanpur
+            Kanpur, UP - 208016, India.</item>
     </string-array>
     <string-array name="faculty3">
-        <item>6874957685</item>
-        <item>faculty3@gmail.com</item>
-        <item>faculty3 IITK</item>
+        <item> 0512-2597231</item>
+        <item>seth@cse.iitk.ac.in</item>
+        <item>Professor, Department of CSE, IIT Kanpur.</item>
     </string-array>
     <string-array name="faculty4">
-        <item>5434957685</item>
-        <item>faculty4@gmail.com</item>
-        <item>faculty4 IITK</item>
+        <item>Not available</item>
+        <item>deba@cse.iitk.ac.in</item>
+        <item>Assistant Professor, Department of CSE, IIT Kanpur.</item>
     </string-array>
     <string-array name="faculty5">
-        <item>1235827685</item>
-        <item>faculty5@gmail.com</item>
-        <item>faculty5 IITK</item>
+        <item>Not available</item>
+        <item>mainakc@cse.iitk.ac.in</item>
+        <item>Professor, Department of CSE, IIT Kanpur.</item>
     </string-array>
 
 

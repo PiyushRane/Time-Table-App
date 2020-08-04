@@ -1,4 +1,4 @@
-package com.example.timetabledemo;
+package com.example.TimetableApp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,7 +18,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.timetabledemo.Utils.LetterImageView;
+import com.example.TimetableApp.Utils.LetterImageView;
 
 public class SubjectActivity extends AppCompatActivity {
 

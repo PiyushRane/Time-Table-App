@@ -9,9 +9,9 @@
         android:layout_height="wrap_content"
         android:background="@color/gray">
 
-        <com.example.timetabledemo.Utils.LetterImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+        <com.example.TimetableApp.Utils.LetterImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/ivLetterFaculty"
             android:layout_margin="8dp"
             />
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="Faculty"
             android:textColor="@color/White"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="6dp"
             android:id="@+id/tvFacultyName"
             android:textStyle="bold"

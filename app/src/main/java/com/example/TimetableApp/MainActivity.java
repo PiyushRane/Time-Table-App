@@ -1,4 +1,4 @@
-package com.example.timetabledemo;
+package com.example.TimetableApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 

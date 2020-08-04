@@ -1,11 +1,10 @@
-package com.example.timetabledemo;
+package com.example.TimetableApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -49,7 +48,7 @@ public class FacultyDetails extends AppCompatActivity {
     private void setupDetails(){
         int faculty_pos = FacultyActivity.sharedPreferences.getInt(FacultyActivity.SEL_FACULTY,0);
         String[] facultyNames = getResources().getStringArray(R.array.faculty);
-        int[] facultyImages = new int[]{R.drawable.book,R.drawable.calender,R.drawable.contact,R.drawable.play_i,R.drawable.settings};
+        int[] facultyImages = new int[]{R.drawable.sameer_khandekar,R.drawable.karkare,R.drawable.seth,R.drawable.deba,R.drawable.mainakc};
         int[] facultyArray = new int[]{R.array.faculty1,R.array.faculty2,R.array.faculty3,R.array.faculty4,R.array.faculty5};
         String[] facultyDetails = getResources().getStringArray(facultyArray[faculty_pos]);
 

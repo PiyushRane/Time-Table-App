@@ -1,4 +1,4 @@
-package com.example.timetabledemo;
+package com.example.TimetableApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -51,9 +50,9 @@ public class SubjectDetails extends AppCompatActivity {
             syllabus = getResources().getStringArray(R.array.CS201);
         }
         else if(selected_subject.equalsIgnoreCase("CS202")){
-            syllabus = getResources().getStringArray(R.array.CS201);
+            syllabus = getResources().getStringArray(R.array.CS202);
         }
-        else if(selected_subject.equalsIgnoreCase("CS201")){
+        else if(selected_subject.equalsIgnoreCase("ESO207")){
             syllabus = getResources().getStringArray(R.array.ESO207);
         }
         else if(selected_subject.equalsIgnoreCase("TA201")){

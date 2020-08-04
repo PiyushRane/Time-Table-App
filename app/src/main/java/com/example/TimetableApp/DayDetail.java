@@ -1,4 +1,4 @@
-package com.example.timetabledemo;
+package com.example.TimetableApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,17 +6,15 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.timetabledemo.Utils.LetterImageView;
+import com.example.TimetableApp.Utils.LetterImageView;
 
 public class DayDetail extends AppCompatActivity {
 
